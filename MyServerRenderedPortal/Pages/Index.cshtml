@@ -40,67 +40,10 @@
 
 <div>
    
-    <a asp-page="./Shoes/Edit" asp-route-id="1">Edit</a>
+    <a asp-page="./Shoes/Edit" asp-route-username="@Model.username">Edit</a>
 </div>
 
 
 
-    <div>
 
-       
-
-
-        @*@Html.DropDownListFor(
-            x => x.SelectedShoeSizeId,
-            Model.ShoeSizes
-        )*@
-
-
-     
-
-
-        @* @Html.DropDownListFor(Model.SelectedShoeSizeId, Model.ShoeSizes)*@
-
-
-        @*@{
-                List<CategoryModel> CategoryList = CategoryModel.GetCategoryList(UserID);
-                IEnumerable<SelectListItem> CategorySelectList = CategoryList.Select(x => new SelectListItem() { Text = x.CategoryName.Trim(), Value = x.CategoryID.Trim() });
-            }
-            <tr>
-                <td>
-                    <B>Assigned Category:</B>
-                </td>
-                <td>
-                    @Html.DropDownList("CategoryList", CategorySelectList, "Select a Category (Optional)")
-                </td>
-            </tr>*@
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @*<input type="submit" value="Submit Data" id="btnSubmit" />*@
 }
-
-
-@*<input type="submit" value="Save" />
-    <input type="button"
-           value="Go Somewhere Else"
-           onclick="location.href='<%: Url.Action('OnSave', 'Index') %>'" />*@
-
-
-
-

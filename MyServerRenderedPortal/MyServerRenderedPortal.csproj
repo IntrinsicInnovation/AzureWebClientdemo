@@ -29,10 +29,4 @@
     <PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders" Version="0.16.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="Pages\ShoeSizes\Index - Copy.cshtml.cs">
-      <DependentUpon>Index.cshtml.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
 </Project>

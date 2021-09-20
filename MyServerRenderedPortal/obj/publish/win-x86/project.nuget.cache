@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l2lnPxq80mFLwFO0cIN4lqJgDSL6zW496nrqdQOi/jfI77zpVf3E06MJxjXAWqjQhFKzOF6OXyOWne5OH9BmTw==",
+  "dgSpecHash": "YhX0A6cb5Lpq7gcE2HmOBLx9ppAikg8phirwibHYla3Cyv+VRVqPhzGMzCtygSAs6Db8/TX+60+0lbrABJQFGw==",
   "success": true,
-  "projectFilePath": "D:\\Development\\repos\\AzureAD-Auth-MyUI-with-MyAPI\\MyServerRenderedPortal\\MyServerRenderedPortal.csproj",
+  "projectFilePath": "D:\\Development\\repos\\AzureWebClientdemo\\MyServerRenderedPortal\\MyServerRenderedPortal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\clmho\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\clmho\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

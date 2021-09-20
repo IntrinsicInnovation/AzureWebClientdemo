@@ -23,6 +23,8 @@ namespace MyServerRenderedPortal.Pages
 
         public string shoesizestr;
 
+        public string username;
+
         public IndexModel(ILogger<IndexModel> logger, ShoeSizeContext context)
         {
             _logger = logger;
@@ -35,70 +37,18 @@ namespace MyServerRenderedPortal.Pages
             var claims = r.Claims.ToList();
             myclaims.AddRange(claims);
 
-            //  var model = new MyViewModel
-            //  {
-            SelectedShoeSizeId = 1; // dsn.NewsCategoriesID,
+            username = myclaims.Where(c => c.Type == "preferred_username").FirstOrDefault().Value;
 
-            ShoeSizes = new List<SelectListItem>()
-            {
+          
 
-
-                new SelectListItem { Text = "extra small", Value = "1"},
-                   new SelectListItem { Text = "small", Value = "2"},
-                      new SelectListItem { Text = "medium", Value = "3"},
-                         new SelectListItem { Text = "large", Value = "4"},
-                            new SelectListItem { Text = "extra large", Value = "5"},
-
-                //Categories = categories.Select(x => new SelectListItem
-               // {
-               //     Value = x.NewsCategoriesID.ToString(),
-               //     Text = x.NewsCategoriesName
-               // })
-
-               
-
-
-        };
-
-            var shoesize =  _context.Shoes.FirstOrDefault(m => m.ID == 1);
+            var shoesize =  _context.Shoes.FirstOrDefault(m => m.username == username);
             var shoesizeid = shoesize.ShoeSizeID;
             var shoe = _context.ShoeSizes.FirstOrDefault(s => s.ID == shoesizeid);
             shoesizestr = shoe.Size;
 
-
-
         }
 
-        public void OnSave()
-        {
-            var r = Request.HttpContext.User;
-            var claims = r.Claims.ToList();
-            myclaims.AddRange(claims);
-
-            //  var model = new MyViewModel
-            //  {
-            SelectedShoeSizeId = 1;
-
-            ShoeSizes = new List<SelectListItem>()
-            {
-
-
-                new SelectListItem { Text = "extra small", Value = "1"},
-                   new SelectListItem { Text = "small", Value = "2"},
-                      new SelectListItem { Text = "medium", Value = "3"},
-                         new SelectListItem { Text = "large", Value = "4"},
-                            new SelectListItem { Text = "extra large", Value = "5"},
-
-                //Categories = categories.Select(x => new SelectListItem
-               // {
-               //     Value = x.NewsCategoriesID.ToString(),
-               //     Text = x.NewsCategoriesName
-               // })
-            };
-
-
-
-        }
+    
     }
 
 }

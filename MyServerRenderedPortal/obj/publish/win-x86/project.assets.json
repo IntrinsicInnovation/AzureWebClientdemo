@@ -8248,11 +8248,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\repos\\AzureAD-Auth-MyUI-with-MyAPI\\MyServerRenderedPortal\\MyServerRenderedPortal.csproj",
+      "projectUniqueName": "D:\\Development\\repos\\AzureWebClientdemo\\MyServerRenderedPortal\\MyServerRenderedPortal.csproj",
       "projectName": "MyServerRenderedPortal",
-      "projectPath": "D:\\Development\\repos\\AzureAD-Auth-MyUI-with-MyAPI\\MyServerRenderedPortal\\MyServerRenderedPortal.csproj",
+      "projectPath": "D:\\Development\\repos\\AzureWebClientdemo\\MyServerRenderedPortal\\MyServerRenderedPortal.csproj",
       "packagesPath": "C:\\Users\\clmho\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\repos\\AzureAD-Auth-MyUI-with-MyAPI\\MyServerRenderedPortal\\obj\\publish\\win-x86\\",
+      "outputPath": "D:\\Development\\repos\\AzureWebClientdemo\\MyServerRenderedPortal\\obj\\publish\\win-x86\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

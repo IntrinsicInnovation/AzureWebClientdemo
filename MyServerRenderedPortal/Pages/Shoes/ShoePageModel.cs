@@ -21,7 +21,6 @@ namespace MyServerRenderedPortal.Pages.Shoes
             object selectedShoeSize = null)
         {
             var ssQuery = from ss in _context.ShoeSizes 
-                                   //orderby d. .Name // Sort by name.
                                    select ss;
 
             ShoeSizeSL = new SelectList(ssQuery.AsNoTracking(),

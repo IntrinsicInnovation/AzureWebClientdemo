@@ -27,9 +27,15 @@ namespace MyServerRenderedPortal.Data
 
             if (!context.Shoes.Any())
             {
-
-                var shoe = new Shoe() { ShoeSizeID = 1 };
+                var shoe = new Shoe() { ShoeSizeID = 1, username = "chrisjohns604@gmail.com" };
                 context.Shoes.Add(shoe);
+                
+                shoe = new Shoe() { ShoeSizeID = 1, username = "test1@chrisjohns604gmail.onmicrosoft.com" };
+                context.Shoes.Add(shoe);
+
+                shoe = new Shoe() { ShoeSizeID = 1, username = "test2@chrisjohns604gmail.onmicrosoft.com" };
+                context.Shoes.Add(shoe);
+
                 context.SaveChanges();
             }
 

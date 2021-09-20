@@ -23,14 +23,14 @@ namespace MyServerRenderedPortal.Pages.Shoes
         [BindProperty]
         public Shoe Shoe { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(string username) // (int? id)
         {
-            if (id == null)
+            if (username == null)
             {
                 return NotFound();
             }
 
-            Shoe = await _context.Shoes.FirstOrDefaultAsync(m => m.ID == id);
+            Shoe = await _context.Shoes.FirstOrDefaultAsync(m => m.username == username); // id);
 
             if (Shoe == null)
             {

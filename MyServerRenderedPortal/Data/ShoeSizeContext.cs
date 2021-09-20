@@ -24,11 +24,7 @@ namespace MyServerRenderedPortal.Data
 
 
         }
-       // public DbSet<Shoe> Shoes { get; set; }
-
-       // public DbSet<MyServerRenderedPortal.Models.Shoe> Shoe { get; set; }
-
-        //public DbSet<MyServerRenderedPortal.Models.Shoe> Shoe { get; set; }
+      
 
     }
 }
