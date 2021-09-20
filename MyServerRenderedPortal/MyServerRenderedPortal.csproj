@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-MyServerRenderedPortal-C5CB1E61-55D5-4D0D-A192-68F28533B4EA</UserSecretsId>
+    <WebProject_DirectoryAccessLevelKey>1</WebProject_DirectoryAccessLevelKey>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\ShoeSizes - Copy\**" />
+    <Content Remove="Pages\ShoeSizes - Copy\**" />
+    <EmbeddedResource Remove="Pages\ShoeSizes - Copy\**" />
+    <None Remove="Pages\ShoeSizes - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.15.2" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.15.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="IdentityModel.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders" Version="0.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\ShoeSizes\Index - Copy.cshtml.cs">
+      <DependentUpon>Index.cshtml.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
